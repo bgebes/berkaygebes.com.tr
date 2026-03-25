@@ -1,0 +1,399 @@
+{
+  "home": {
+    "hero": {
+      "id": 1,
+      "title1": "Berkay",
+      "title2": "Gebeş",
+      "title3": "Researcher.",
+      "subtitle": "Specialized in Machine Learning, AI, and Image Processing."
+    },
+    "skills": [
+      {
+        "id": 258,
+        "title": "Machine Learning & AI",
+        "desc": "Expertise in developing intelligent systems and machine learning models.",
+        "iconName": "Brain",
+        "tags": [
+          "Machine Learning",
+          "Artificial Intelligence",
+          "Deep Learning",
+          "Neural Networks"
+        ]
+      },
+      {
+        "id": 259,
+        "title": "Image Processing",
+        "desc": "Advanced knowledge in computer vision and image analysis techniques.",
+        "iconName": "Camera",
+        "tags": [
+          "Computer Vision",
+          "Image Analysis",
+          "Pattern Recognition",
+          "OpenCV"
+        ]
+      },
+      {
+        "id": 260,
+        "title": "Mobile Development",
+        "desc": "Experienced in building Android applications and teaching mobile development.",
+        "iconName": "Smartphone",
+        "tags": [
+          "Android Development",
+          "Mobile Apps",
+          "Java",
+          "Kotlin",
+          "Flutter"
+        ]
+      },
+      {
+        "id": 261,
+        "title": "Robotic Coding",
+        "desc": "Skilled in robotic systems development and automation.",
+        "iconName": "Code",
+        "tags": [
+          "Robotics",
+          "Embedded Systems",
+          "Arduino",
+          "Automation"
+        ]
+      },
+      {
+        "id": 262,
+        "title": "Software Development",
+        "desc": "Full-stack development with focus on intelligent transportation systems.",
+        "iconName": "Terminal",
+        "tags": [
+          "Python",
+          "Java",
+          "Web Development",
+          "Backend Systems"
+        ]
+      },
+      {
+        "id": 263,
+        "title": "Research & Innovation",
+        "desc": "Leading research projects in intelligent transportation and smart systems.",
+        "iconName": "Database",
+        "tags": [
+          "Research",
+          "Project Management",
+          "Technical Documentation",
+          "Innovation"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "id": 114,
+        "degree": "M.Sc. in Computer Engineering",
+        "institution": "Ondokuz Mayıs University",
+        "period": "2024 – Present",
+        "desc": "Graduate study focused on advanced algorithm design and machine learning architectures within the Department of Computer Engineering. Actively participating in research seminars and collaborative lab projects."
+      },
+      {
+        "id": 115,
+        "degree": "B.Sc. in Computer Engineering",
+        "institution": "Ondokuz Mayıs University",
+        "period": "2020 – 2024",
+        "desc": "Completed the Computer Engineering program with a strong focus on core engineering principles and intelligent systems. Served as a mobile development instructor and led multiple student-led tech initiatives."
+      },
+      {
+        "id": 116,
+        "degree": "High School Diploma",
+        "institution": "Fatsa Anatolian High School",
+        "period": "2016 – 2020",
+        "desc": "Developed a strong foundation in mathematics and analytical thinking. Participated in national robot competitions, marking the beginning of a dedicated journey into engineering and robotics."
+      }
+    ],
+    "experiences": [
+      {
+        "id": 197,
+        "role": "Research Assistant",
+        "title": null,
+        "org": "Hitit University",
+        "period": "Mar 2025 – Present",
+        "date": null,
+        "loc": "Çorum, Türkiye",
+        "desc": "Leading advanced research in Machine Learning and Computer Vision. Contributing to academic curriculum, mentoring engineering students, and developing institutional AI intelligence projects.",
+        "type": "work"
+      },
+      {
+        "id": 198,
+        "role": "Volunteer Software Developer",
+        "title": null,
+        "org": "CEITSS, AUS Turkey",
+        "period": "Nov 2023 – Feb 2025",
+        "date": null,
+        "loc": "Samsun, Türkiye",
+        "desc": "Contributed to the development of intelligent transportation systems (SHATRIP). Lead architect for multidisciplinary smart city systems sponsored by the Intelligent Transportation Systems Association of Turkey (AUS Turkey).",
+        "type": "work"
+      },
+      {
+        "id": 199,
+        "role": "Software Engineer Intern",
+        "title": null,
+        "org": "isTechSoft Software",
+        "period": "Jun 2023 – Oct 2023",
+        "date": null,
+        "loc": "Samsun, Türkiye",
+        "desc": "Built cross-platform mobile apps using Flutter. Implemented MVC architecture, managed complex state with GetX, and integrated Firebase for real-time backend synchronization.",
+        "type": "work"
+      }
+    ],
+    "events": [
+      {
+        "id": 200,
+        "role": "",
+        "title": "Android Training Instructor",
+        "org": "GDSC OMU",
+        "period": "Nov 2023",
+        "date": "",
+        "loc": "Samsun, Türkiye",
+        "desc": "Selected as an instructor by the university to lead a specialized Android Development training program for the engineering department.",
+        "type": "event"
+      },
+      {
+        "id": 201,
+        "role": "",
+        "title": "Webathon Jury Member",
+        "org": "GDSC OMU",
+        "period": "Dec 2022",
+        "date": "",
+        "loc": "Samsun, Türkiye",
+        "desc": "Invited as a technical jury member for a high-intensity 72-hour web development competition, evaluating architectural decisions and project implementation for various student teams.",
+        "type": "event"
+      },
+      {
+        "id": 202,
+        "role": "",
+        "title": "University Representative",
+        "org": "Automotive Summer Camp Summit",
+        "period": "July 2021",
+        "date": "",
+        "loc": "Online / Virtual",
+        "desc": "Represented OMU at a global virtual summit featuring industry giants like Ford Otosan, Mercedes-Benz, and Toyota. Participated in high-level conferences on automotive software systems.",
+        "type": "event"
+      },
+      {
+        "id": 203,
+        "role": "",
+        "title": "Team Lead / Competitor",
+        "org": "13th Int. MEB Robot Competition",
+        "period": "April 2019",
+        "date": "",
+        "loc": "Samsun, Türkiye",
+        "desc": "Ranked 15th among 271 robots in the Caretta Caretta Collection category. Gained direct TEKNOFEST eligibility. Represented Fatsa Cahit Zarifoğlu Anatolian High School in the 3-day elimination tournament.",
+        "type": "event"
+      },
+      {
+        "id": 204,
+        "role": "",
+        "title": "Exhibitor / Team Member",
+        "org": "Fatsa Robotics and Coding Festival",
+        "period": "April 2019",
+        "date": "",
+        "loc": "Ordu, Türkiye",
+        "desc": "Successfully presented school-led engineering projects and technical demos at the regional Robotics and Coding Festival.",
+        "type": "event"
+      }
+    ]
+  },
+  "blog": {
+    "articles": [
+      {
+        "id": 2,
+        "title": "Lorem Ipsum",
+        "date": "Mar 23, 2026",
+        "readTime": "1 min read",
+        "category": "Technology",
+        "excerpt": "Lorem Ipsum",
+        "content": "<p>Lorem&nbsp;Ipsum</p>",
+        "imageUrl": "https://picsum.photos/200/200"
+      }
+    ],
+    "commentsMap": {}
+  },
+  "projects": {
+    "config": {
+      "page": "projects",
+      "title1": "Professional",
+      "title2": "Portfolio Grid.",
+      "subtitle": "A curated collection of research implementations, system architectures, and scientific computing projects.",
+      "extra1": null,
+      "extra2": null,
+      "extra3": null
+    },
+    "projects": [
+      {
+        "id": 13,
+        "title": "Online Venue and Event Reservation Application",
+        "category": "Mobile Application",
+        "desc": "This application delivers a robust suite of features for users to efficiently search for city venues and events, utilize advanced filtering options, make immediate reservations, evaluate user reviews and ratings, access menu pricing, and view distance information based on location.",
+        "gh": "",
+        "demo": "https://www.istechsoft.com/project/neary/",
+        "tags": [
+          "Figma",
+          " Flutter",
+          " Software Development"
+        ],
+        "tech": [
+          "Figma",
+          " Flutter",
+          " Software Development"
+        ]
+      }
+    ]
+  },
+  "lab": {
+    "config": {
+      "page": "lab",
+      "title1": "Scientific",
+      "title2": "Research Hub.",
+      "subtitle": "A multidisciplinary research environment focused on advancing System Intelligence, Machine Learning, and Innovative Academic Solutions.",
+      "extra1": null,
+      "extra2": null,
+      "extra3": null
+    },
+    "domains": [
+      {
+        "id": 9,
+        "title": "Machine Learning",
+        "iconName": "Brain",
+        "desc": "Developing advanced stochastic models for predictive analysis."
+      },
+      {
+        "id": 10,
+        "title": "Computer Vision",
+        "iconName": "Target",
+        "desc": "Real-time object detection and spatial awareness algorithms."
+      },
+      {
+        "id": 11,
+        "title": "Deep Learning",
+        "iconName": "Binary",
+        "desc": "Neural network optimizations for complex dataset processing."
+      },
+      {
+        "id": 12,
+        "title": "Natural Language Processing",
+        "iconName": "MessageSquare",
+        "desc": "Architecting systems for semantic understanding and linguistic data processing."
+      }
+    ]
+  },
+  "contents": {
+    "config": {
+      "page": "contents",
+      "title1": "Scientific",
+      "title2": "Resources Hub.",
+      "subtitle": "An optimized compilation of technical documentation, research papers, and academic resources.",
+      "extra1": null,
+      "extra2": null,
+      "extra3": null
+    },
+    "categories": [
+      {
+        "id": 21,
+        "label": "Source Code",
+        "iconName": "Code",
+        "resources": [
+          {
+            "id": 43,
+            "categoryId": 21,
+            "title": "GraphQL Event Management System",
+            "desc": "GraphQL server that can display users, events, location and event attendees through the data set provided to you.",
+            "iconName": "Code",
+            "link": "https://github.com/bgebes/graphql-event",
+            "tags": [
+              "react",
+              "javascript",
+              "apollo-client",
+              "ws",
+              "graphql-yoga",
+              "graphql-ws"
+            ]
+          },
+          {
+            "id": 44,
+            "categoryId": 21,
+            "title": "Archived Source Codes",
+            "desc": "That's my older practices.",
+            "iconName": "Code",
+            "link": "https://github.com/bgebes/archive",
+            "tags": [
+              "ruby",
+              "python",
+              "c",
+              "java",
+              "jekyll",
+              "dart",
+              "php",
+              "csharp"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "label": "Publications ",
+        "iconName": "BookOpen",
+        "resources": [
+          {
+            "id": 45,
+            "categoryId": 22,
+            "title": "The Impact of Dimensionality Reduction Techniques on Classification Performance in Dry Bean Variety Classification Using Machine Learning",
+            "desc": "In recent times, the increase in the human population has led to a growing demand for food. In response to this increasing demand, smart farming systems are being developed to enable efficient and conscious agricultural practices. This study focuses on the classification of agricultural product varieties using machine learning, one of the preferred technologies in smart farming systems, with various classification algorithms. Moreover, the effects of different dimensionality reduction techniques on classification success are examined and compared. The dataset used in the study consists of data from seven types of dry beans and includes 13,611 data samples. The classification algorithms employed include K-Nearest Neighbor (KNN), Support Vector Machines (SVM), Gaussian Naive Bayes (GaussianNB), Random Forest (RF), Decision Trees (DT), AdaBoost, and Multi-Layer Perceptron (MLP). The dimensionality reduction techniques analyzed are Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), Independent Component Analysis (ICA), and Factor Analysis (FA). The comparison results are evaluated based on metrics such as Accuracy, Precision, Recall, and F1Score. According to the accuracy metric, LDA is identified as the most performant dimensionality reduction technique, and it has been observed that dimensionality reduction techniques generally improve or maintain similar performance in the classification models. The impact of dimensionality reduction techniques is most pronounced in experiments with the AdaBoost classification algorithm. In the original dataset, the AdaBoost algorithm achieves a performance of 0.72 according to the F1-Score metric. However, when dimensionality reduction is applied using PCA, LDA, ICA, and FA the AdaBoost algorithm achieves F1-Scores of 0.83,0.91,0.77, and 0.87, respectively. The use of dimensionality reduction techniques in conjunction with the AdaBoost algorithm results in a significant improvement in classification performance.",
+            "iconName": "BookOpen",
+            "link": "https://ieeexplore.ieee.org/abstract/document/11101793",
+            "tags": [
+              "Dry bean classification",
+              "dimension reduction techniques",
+              "smart agriculture",
+              "machine learning",
+              "pattern recognition"
+            ]
+          },
+          {
+            "id": 46,
+            "categoryId": 22,
+            "title": "High-Performance IoT Monitoring With Redis-Backed In-Memory Storage and Containerized CI/CD Pipeline",
+            "desc": "This study presents the design, development, and deployment of a high-performance Internet of Things (IoT) monitoring system featuring an integrated Redis-based in-memory processing architecture. The system collects real-time environmental data—including temperature, humidity, and pressure—from field-deployed TI CC1352R SensorTag devices operating within an LR-WPAN network. These measurements are forwarded to a TI CC1352R LaunchPad border router node, which employs an ESP32 Wi-Fi SoC interface to transmit the sensed data to cloud-based web services via the global Internet. The web service dynamically caches and stores incoming traffic according to database write speed and network intensity, while the Redis caching layer significantly enhances data ingestion and monitoring response times by reducing database load. The backend follows modular and scalable CI/CD pipeline principles, automating the testing, building, and deployment phases. Except for the firmware running on sensor nodes, every component of the system is triggered by version-controlled merges, ensuring automated testing and re-deployment. One of the main challenges in complex IoT systems—especially those requiring continuous weekly feature updates (sprint-based development)—is constructing a fully integrated, end-to-end system that remains stable and extensible. Experimental findings demonstrate rapid recovery from fault conditions (with total re-deployment times below 10 minutes), efficient real-time data visualization, and improved system resilience. The proposed architecture also provides practical guidance for researchers focusing on IoT systems that traditionally rely on simulations by offering a fully operational, end-to-end technological solution. By caching large volumes of sensor data before disk storage, the system overcomes one of the major scalability bottlenecks in growing IoT networks. On a 12 GB RAM server, the architecture successfully stores data from approximately 530,000 sensor messages using a 10-second caching interval, effectively absorbing sudden data bursts through Redis buffering. Consequently, the study establishes a robust foundation for future extensions involving machine learning integration and large-scale sensor deployments.",
+            "iconName": "BookOpen",
+            "link": "https://dergipark.org.tr/en/pub/bsengineering/article/1735232",
+            "tags": [
+              "Internet of things (IoT)",
+              "In-memory processing",
+              "Redis",
+              "Containerization",
+              "CI/CD pipeline"
+            ]
+          },
+          {
+            "id": 47,
+            "categoryId": 22,
+            "title": "A Study on Apron Minimization for Airport Gate Assignment: Algorithms, Performance, and Real-World Applications",
+            "desc": "This study addresses apron minimization in the airport aircraft gate assignment problem and examines the approaches of different algorithms to this optimization problem. Three different algorithms are used to determine which gates to direct available aircraft at the airport: the greedy approach, first-come, first-served (FCFS), and simulated annealing. These algorithms were coded in MATLAB, and their performances were compared by testing them on randomly generated and real data sets. The random data sets constituted the control group of the study, while the real data sets were used to simulate real-world scenarios. Each algorithm was applied to the data sets to achieve apron minimization, and the obtained results were recorded. Experimental findings demonstrate the effectiveness and performance of different algorithms on apron minimization. This study makes a significant contribution to the literature by comparing the contributions and performance of the algorithms on apron minimization for the airport aircraft gate assignment problem. The obtained results enable the development of more efficient and effective gate assignment strategies and the improvement of airport operations.",
+            "iconName": "BookOpen",
+            "link": "https://link.springer.com/chapter/10.1007/978-3-032-14078-4_47",
+            "tags": [
+              "Aircraft Gate Assignment",
+              "Apron Minimization",
+              "Optimization Algorithms",
+              "Simulated Annealing",
+              "Performance Comparison"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "contactConfig": {
+    "page": "contact",
+    "title1": "Connect & Build",
+    "title2": "Have a research proposal? Let's collaborate.",
+    "subtitle": "Open to scientific projects and technical collaborations.",
+    "extra1": "contact@berkaygebes.com.tr",
+    "extra2": "https://linkedin.com/in/berkay-gebes",
+    "extra3": "https://github.com/bgebes"
+  }
+}

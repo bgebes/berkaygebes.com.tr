@@ -1,0 +1,32 @@
+name: Auto Deploy Next via GitHub Actions
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Sync and Deploy
+        run: |
+          echo "Dosyalar güncelleniyor..."
+          mkdir -p /01-www
+          cp -rf ./* /01-www/
+          cp -rf ./.[!.]* /01-www/ 2>/dev/null || true
+          
+          echo "Kopyalama tamamlandı. Mevcut konteynerler kontrol ediliyor..."
+
+          # Adım 1: Çalışan varsa durdur ve sil (Hata vermemesi için || true ekledik)
+          docker compose -p berkaygebes_next down || true
+
+          # Adım 2: Yeni build ile ayağa kaldır - 1
+          # --remove-orphans: Tanımsız kalan eski yapıları temizler
+          docker compose -p berkaygebes_next up -d --build --remove-orphans next
+          
+          # Adım 3: Temizlik
+          docker image prune -f
