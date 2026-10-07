@@ -51,7 +51,8 @@ const Contact: React.FC<ContactProps> = ({ data }) => {
           <div className="contact-footer-info">
             <div className="copy-text">© {new Date().getFullYear()} Berkay Gebeş.</div>
             <div className="powered-by">
-              Built with <a href="https://antigravity.google/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline' }}>Google Antigravity</a>
+              <span>Built with <a href="https://antigravity.google/" target="_blank" rel="noopener noreferrer">Google Antigravity</a></span>
+              <span>and <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></span>
             </div>
           </div>
 

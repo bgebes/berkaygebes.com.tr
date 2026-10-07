@@ -43,8 +43,8 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
             <a href="#contact" onClick={scrollToContact} className="launch-btn primary">
                Collaborate <ChevronRight size={18} />
             </a>
-            <Link href="/projects" className="launch-btn secondary">
-               Projects
+            <Link href="/portfolio" className="launch-btn secondary">
+               Portfolio
             </Link>
           </div>
         </div>

@@ -23,10 +23,8 @@ const Header: React.FC = () => {
         </Link>
         <nav className="nav-links-modern">
           <Link href="/" className={`nav-item ${pathname === '/' ? 'active' : ''}`}>home</Link>
-          <Link href="/blog" className={`nav-item ${pathname.startsWith('/blog') ? 'active' : ''}`}>blog</Link>
-          <Link href="/contents" className={`nav-item ${pathname.startsWith('/contents') ? 'active' : ''}`}>contents</Link>
           <Link href="/lab" className={`nav-item ${pathname.startsWith('/lab') ? 'active' : ''}`}>lab</Link>
-          <Link href="/projects" className={`nav-item ${pathname.startsWith('/projects') ? 'active' : ''}`}>projects</Link>
+          <Link href="/portfolio" className={`nav-item ${pathname.startsWith('/portfolio') ? 'active' : ''}`}>portfolio</Link>
         </nav>
       </div>
     </header>
