@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import { ArrowRight, FolderGit2 } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
 import contentData from '../../../src/data/content.json';
@@ -22,6 +25,7 @@ const DEFAULT_CATEGORIES = [
 ];
 
 export default function PortfolioPage() {
+  const [activeCategory, setActiveCategory] = useState('projects');
   const projects = contentData.projects.projects?.length
     ? contentData.projects.projects
     : DEFAULT_PROJECTS;
@@ -32,6 +36,7 @@ export default function PortfolioPage() {
     const IconComponent = (LucideIcons as any)[name] || LucideIcons.ExternalLink;
     return <IconComponent size={size} />;
   };
+  const selectedCategory = categories.find((category: any) => category.label.trim() === activeCategory);
 
   return (
     <div className="inner-page-lansman animate-in">
@@ -43,18 +48,40 @@ export default function PortfolioPage() {
           </p>
         </header>
 
-        <section className="portfolio-section">
-          <div className="portfolio-group">
-            <header className="category-header portfolio-group-header">
-              <div className="category-label-wrap">
-                <FolderGit2 size={20} />
-                <h2 className="portfolio-category-title">Projects</h2>
-              </div>
-              <div className="header-line" />
-              <span className="category-count">{projects.length} projects</span>
-            </header>
-            <div className="projects-launch-grid">
-              {projects.map((project: any, index: number) => (
+        <section className="portfolio-section portfolio-resources">
+          <nav className="portfolio-category-tabs" aria-label="Portfolio categories">
+            <button
+              type="button"
+              className={`portfolio-category-tab ${activeCategory === 'projects' ? 'is-active' : ''}`}
+              onClick={() => setActiveCategory('projects')}
+              aria-selected={activeCategory === 'projects'}
+            >
+              <FolderGit2 size={20} />
+              <span>Projects</span>
+              <small>{projects.length}</small>
+            </button>
+            {categories.map((category: any, index: number) => {
+              const categoryKey = category.label.trim();
+              return (
+                <button
+                  type="button"
+                  key={index}
+                  className={`portfolio-category-tab ${activeCategory === categoryKey ? 'is-active' : ''}`}
+                  onClick={() => setActiveCategory(categoryKey)}
+                  aria-selected={activeCategory === categoryKey}
+                >
+                  {getIcon(category.iconName, 20)}
+                  <span>{category.label}</span>
+                  <small>{category.resources?.length || 0}</small>
+                </button>
+              );
+            })}
+          </nav>
+
+          {activeCategory === 'projects' ? (
+            <div className="portfolio-tab-content">
+              <div className="projects-launch-grid">
+                {projects.map((project: any, index: number) => (
                   <article key={index} className="project-launch-card">
                     <h3 className="project-launch-title">{project.title}</h3>
                     <p className="project-launch-desc">{project.desc}</p>
@@ -75,45 +102,32 @@ export default function PortfolioPage() {
                       </a>
                     </div>
                   </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="portfolio-section portfolio-resources">
-          <div className="contents-stack-lansman">
-            {categories.map((category: any, index: number) => (
-              <div key={index} className="content-category-group">
-                <header className="category-header">
-                  <div className="category-label-wrap">
-                    {getIcon(category.iconName, 20)}
-                    <h2 className="portfolio-category-title">{category.label}</h2>
-                  </div>
-                  <div className="header-line" />
-                  <span className="category-count">{category.resources?.length || 0} {category.label.toLowerCase()}</span>
-                </header>
-                <div className="category-items-grid">
-                  {(category.resources || []).map((resource: any, resourceIndex: number) => (
-                    <a key={resourceIndex} href={resource.link} target="_blank" rel="noopener noreferrer" className="resource-card-modern">
-                      <div className="resource-info">
-                        <h3 className="resource-title">{resource.title}</h3>
-                        <p className="resource-desc text-muted">{resource.desc}</p>
-                        <div className="resource-tags">
-                          {(resource.tags || []).map((tag: string, tagIndex: number) => (
-                            <span key={tagIndex} className="resource-tag-pill">{tag}</span>
-                          ))}
-                        </div>
-                      </div>
-                      <span className="resource-action-link" aria-label={`Go to ${resource.title}`}>
-                        <span>Visit</span>
-                        <ArrowRight size={18} />
-                      </span>
-                    </a>
-                  ))}
-                </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ) : selectedCategory ? (
+            <div className="portfolio-tab-content content-category-group">
+              <div className="category-items-grid">
+                {(selectedCategory.resources || []).map((resource: any, resourceIndex: number) => (
+                  <a key={resourceIndex} href={resource.link} target="_blank" rel="noopener noreferrer" className="resource-card-modern">
+                    <div className="resource-info">
+                      <h3 className="resource-title">{resource.title}</h3>
+                      <p className="resource-desc text-muted">{resource.desc}</p>
+                      <div className="resource-tags">
+                        {(resource.tags || []).map((tag: string, tagIndex: number) => (
+                          <span key={tagIndex} className="resource-tag-pill">{tag}</span>
+                        ))}
+                      </div>
+                    </div>
+                    <span className="resource-action-link" aria-label={`Go to ${resource.title}`}>
+                      <span>Visit</span>
+                      <ArrowRight size={18} />
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ) : null}
         </section>
       </div>
     </div>

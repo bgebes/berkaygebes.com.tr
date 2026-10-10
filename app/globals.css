@@ -547,19 +547,47 @@ a {
 
 .portfolio-section .project-launch-card {
   min-height: 0;
-  padding: 1.75rem 0;
-  border-width: 1px 0 0;
+  padding: 1.5rem 0;
+  border-width: 0 0 1px;
   border-radius: 0;
   position: relative;
   padding-right: 6rem;
+  gap: 0.5rem;
+}
+
+.portfolio-section .project-launch-card:last-child,
+.portfolio-resources .resource-card-modern:last-child {
+  border-bottom: 0;
 }
 
 .portfolio-section .portfolio-card-actions {
   position: absolute;
-  top: 1.75rem;
+  top: 1.5rem;
   right: 0;
   margin: 0;
   padding: 0;
+}
+
+.portfolio-section .project-launch-title,
+.portfolio-section .resource-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.portfolio-section .project-launch-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 700px;
+}
+
+.portfolio-section .project-tech-stack {
+  gap: 0.5rem;
+}
+
+.portfolio-section .tech-pill-tag {
+  padding: 0.25rem 0.6rem;
 }
 
 .portfolio-section .project-launch-card:hover,
@@ -572,6 +600,62 @@ a {
   gap: 4rem;
 }
 
+.portfolio-category-tabs {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.portfolio-category-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: -1px;
+  border: 1px solid transparent;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: color 0.25s, border-color 0.25s;
+}
+
+.portfolio-category-tab:hover,
+.portfolio-category-tab.is-active {
+  color: var(--accent);
+}
+
+.portfolio-category-tab.is-active {
+  border-bottom-color: var(--accent);
+}
+
+.portfolio-category-tab small {
+  color: #cbd5e1;
+  font-size: 0.65rem;
+  letter-spacing: 0;
+}
+
+.portfolio-tab-content {
+  animation: portfolio-tab-in 0.3s ease both;
+}
+
+@keyframes portfolio-tab-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .portfolio-resources .category-items-grid {
   display: flex;
   flex-direction: column;
@@ -581,7 +665,7 @@ a {
 .portfolio-resources .resource-card-modern {
   min-height: 0;
   padding: 1.5rem 0;
-  border-width: 1px 0 0;
+  border-width: 0 0 1px;
   border-radius: 0;
   align-items: flex-start;
   color: inherit;
@@ -605,6 +689,19 @@ a {
 
 .portfolio-resources .category-label-wrap {
   color: #1a1a1a;
+}
+
+@media (max-width: 640px) {
+  .portfolio-category-tabs {
+    overflow-x: auto;
+    margin-bottom: 2.5rem;
+  }
+
+  .portfolio-category-tab {
+    flex: 0 0 auto;
+    padding: 0.85rem 0.75rem;
+    font-size: 0.65rem;
+  }
 }
 
 .category-count {
@@ -2609,11 +2706,11 @@ a {
 }
 
 .portfolio-section .project-launch-card {
-  padding-right: 5rem;
+  padding-right: 6rem;
 }
 
 .portfolio-section .portfolio-card-actions {
-  top: 1.75rem;
+  top: 1.5rem;
   right: 0;
 }
 
