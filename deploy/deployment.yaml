@@ -13,7 +13,7 @@ spec:
       containers:
       - name: web
         # GitHub Actions her build'de bu satırı günceller
-        image: ghcr.io/bgebes/berkaygebes.com.tr:ilk-build-bekleniyor
+        image: ghcr.io/bgebes/berkaygebes.com.tr:d54bbd565abd3840534a8895c64256319d095bce
         ports:
         - containerPort: 3000
         readinessProbe:
